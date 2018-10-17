@@ -1,0 +1,24 @@
+
+
+header {
+    background-color:lightgray;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: darkcyan;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.logos{
+    width: 10%;
+    height: 10%;
+}
+
+#img_cpu{
+    width: 25%;
+    height: 25%;
+    float: right;
+}

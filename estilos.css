@@ -1,0 +1,75 @@
+
+*{
+    box-sizing: border-box;
+}
+
+header {
+    background-color:darkcyan;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+#logo{
+    width: 5%;
+    height: 5%;
+}
+
+footer{
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/*Menú Izquierda*/
+nav ul{
+    list-style-type: none;
+    float: left;
+    width: 15%;
+    background: #ccc;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/*FRAME Info Dcha*/
+iframe {
+    float: left;
+    padding: 20px;
+    width:85%;
+    height: 800px;
+    background-color:lightgray;
+    border: none;
+}
+
+
+/*Formato MENU*/
+
+li{
+    text-align: center;
+}
+
+li a{
+    display: block;
+    color:#000;
+    padding: 8px 16px;
+    text-decoration:none;
+}
+
+li a:hover{
+    background-color:darkcyan;
+    color:white;
+}
+
+@media (max-width: 1200px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
