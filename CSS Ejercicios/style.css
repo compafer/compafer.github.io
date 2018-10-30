@@ -1,0 +1,52 @@
+
+/*General*/
+.tema{
+    color: black;
+}
+.instrucciones{
+    color:black;
+}
+
+/*Syntax*/
+p.SyntaxEx1{
+    color:red;
+}
+
+
+/*
+/*element
+p.SyntaxEx1{
+    color:red;
+}
+
+/*id
+#para1{
+    color:blue;
+}
+
+/*class
+.colortext{
+    color:tomato;
+}
+
+/*Group
+#para1,h1,h2{
+    color:white;
+}*/
+
+
+/*Background*/
+.ExBackground{
+    /*background-color:lightblue;
+    background-image: url("images/banana.gif");
+    background-repeat: no-repeat;
+    background-position: right top;*/
+
+    /*Shorthand*/
+    background: lightblue url(images/banana.gif) no-repeat right top;
+
+}
+
+h1.ExBackground{
+    color:Black;
+}

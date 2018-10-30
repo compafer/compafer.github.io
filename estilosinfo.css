@@ -8,12 +8,13 @@ header {
     color: darkblue;
 }
 
+/*Barra de Navegacion*/
 ul{
     list-style-type: none;
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color:lightblue;
+    background-color:whitesmoke;
 }
 
 li{
