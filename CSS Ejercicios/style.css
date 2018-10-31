@@ -1,52 +1,46 @@
 
 /*General*/
+.titulo{
+    color: blue;
+    
+}
+
 .tema{
-    color: black;
+    color: blue;
+    text-align: center;
 }
 .instrucciones{
+
+    font-size: 120%;
     color:black;
 }
 
+.formatodiv{
+    align-content:center;
+    margin: auto;
+    padding: 50px;
+    background-color: lightgrey;
+}
+
+.ejercicio{
+    border: 2px solid black;
+    padding: 10px;
+}
+
 /*Syntax*/
-p.SyntaxEx1{
+.syntax1{
     color:red;
 }
 
-
-/*
-/*element
-p.SyntaxEx1{
-    color:red;
-}
-
-/*id
 #para1{
-    color:blue;
+    color:red;
 }
 
-/*class
 .colortext{
-    color:tomato;
+    color:red;
 }
 
-/*Group
-#para1,h1,h2{
-    color:white;
-}*/
-
-
-/*Background*/
-.ExBackground{
-    /*background-color:lightblue;
-    background-image: url("images/banana.gif");
-    background-repeat: no-repeat;
-    background-position: right top;*/
-
-    /*Shorthand*/
-    background: lightblue url(images/banana.gif) no-repeat right top;
-
+.syntax4{
+    color: red;
 }
 
-h1.ExBackground{
-    color:Black;
-}
