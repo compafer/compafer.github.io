@@ -10,16 +10,16 @@ header {
 
 /*Barra de Navegacion*/
 ul{
+    display: flex;
+    justify-content: center;
     list-style-type: none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
+    /*overflow: hidden;*/ 
     background-color:whitesmoke;
 }
 
-li{
+/*li{
     float:left;
-}
+}*/
 
 li a{
     display:block;
@@ -38,10 +38,15 @@ body{
     background-color: lightgrey;
 }
 
-.logos{
-    width: 10%;
-    height: 10%;
+/*Marcas*/
+.marcas{
+    text-align: center;
 }
+.logos{
+    width: 15%;
+    height: 15%;
+}
+
 
 #img_cpu{
     width: 25%;
