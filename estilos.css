@@ -25,17 +25,6 @@ footer{
     color: white;
 }
 
-/*Menú Izquierda*/
-nav ul{
-    list-style-type: none;
-    float: left;
-    width: 15%;
-    background: #ccc;
-    padding: 20px;
-    margin: 0;
-    padding: 0;
-}
-
 /*FRAME Info Dcha*/
 iframe {
     float: left;
@@ -44,11 +33,27 @@ iframe {
     height: 1000px;
     background-color:lightgray;
     border: none;
+    margin-left: 15%; /*Igual que el ancho del menu*/
+    overflow: hidden;
+}
+
+/*Menú Izquierda*/
+nav ul{
+    list-style-type: none;
+    float: left;
+    width: 15%;
+    background: #ccc;
+    padding: 0;
+        /*Fixed bar*/
+        position: fixed;
+        z-index: 1;
+        top:0;
+        margin-top: 119px;
 }
 
 
-/*Formato MENU*/
 
+/*Formato MENU*/
 li{
     text-align: center;
 }
@@ -65,22 +70,26 @@ li a{
     color:white;
 }
 
-
 li a:hover{
     background-color:darkcyan;
     color:white;
 }
 
+
+/*Responsive*/
 @media (max-width: 800px) {
     nav ul{
         width: 100%;
         height: auto;
+        position: static;
+        margin-top: 0%;
     }
 
     iframe {
         width: 100%;
         height: 800px;
-    }
+        margin-left:0%; 
+        }
 
 }
 
