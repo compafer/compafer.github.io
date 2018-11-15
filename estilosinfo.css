@@ -7,6 +7,12 @@ header {
     font-size: 25px;
     color: darkblue;
 }
+/*Sub-titulos*/
+h2{
+    text-align: center;
+}
+
+/*Parrafos*/
 
 /*Barra de Navegacion*/
 ul{
@@ -45,11 +51,16 @@ body{
 .logos{
     width: 15%;
     height: 15%;
+    transition: 0.4s; /*Velocidad Animacion*/
+    margin: 10px;
+}
+/*ZOOM LOGOS*/
+.logos:hover{
+    transform: scale(1.5);
 }
 
 
 #img_cpu{
     width: 25%;
     height: 25%;
-    float: right;
 }
