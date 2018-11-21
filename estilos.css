@@ -74,10 +74,9 @@ li a{
 }
 
 li a:hover{
-    background-color:darkcyan;
+    background-color:rgb(243, 0, 0);
     color:white;
 }
-
 
 
 /*Responsive*/
