@@ -1,0 +1,47 @@
+
+/*General*/
+
+
+header{
+    text-align: center;
+}
+
+.tema{
+    color: blue;
+    text-align: center;
+}
+.instrucciones{
+
+    font-size: 120%;
+    color:black;
+}
+
+.formatodiv{
+    align-content:center;
+    margin: auto;
+    padding: 50px;
+    background-color: lightgrey;
+}
+
+.ejercicio{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/*Syntax*/
+.syntax1{
+    color:red;
+}
+
+#para1{
+    color:red;
+}
+
+.colortext{
+    color:red;
+}
+
+.syntax4{
+    color: red;
+}
+

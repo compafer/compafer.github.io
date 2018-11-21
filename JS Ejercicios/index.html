@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+    <head>
+        <title class="titulo">JS tutorial</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+   <body>
+        <header>JS Tuturial</header>
+
+            <!--TEMA-->
+            <h1 class="tema">Variables</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Create a variable called carName, assign the value Volvo to it.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           var carName  = "Volvo";
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Create a variable called x, assign the value 50 to it.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var x  = 50;
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Display the sum of 5 + 10, using two variables: x and y.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                             var x = 5;
+                             var y = 10;
+                             document.getElementById("demo").innerHTML = x + y;
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Create a variable called z, assign x + y to it, and display the result in an alert box.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var x = 5;
+                            var y = 10; 
+                            var z = x + y;
+                            alert(z);
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 5</h2>
+                <p class="instrucciones"><i>On one single line, declare three variables with the following names and values:</i></p>
+                <p>firstName = "John"</p>
+                <p>lastName = "Doe"</p>
+                <p>age = 35</p>
+                    <div class="ejercicio">
+                        <pre>
+                            var firstName = "John", lastName = "Doe", age = 35;
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Operators</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Multiply 10 with 5, and alert the result:</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           alert(10*5);
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Divide 10 by 2, and alert the result:</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            alert(10/5);
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Alert the remainder when 15 is divided by 9.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            alert(10%5);
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Use the correct assignment operator that will result in x being 15 (same as x = x + y).</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            x = 10;
+                            y = 5; 
+                            x += y;   
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 5</h2>
+                <p class="instrucciones"><i>Use the correct assignment operator that will result in x being 50 (same as x = x * y).</i></p>
+                <p>age = 35</p>
+                    <div class="ejercicio">
+                        <pre>
+                            x = 10;
+                            y = 5;
+                            x *= y;
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA:Syntax-->
+            <h1 class="tema">Functions</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Execute the function named myFunction.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            function myFunction() {
+                                alert("Hello World!");
+                            }
+                            myFunction();
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Create a function called "myFunction".</i></p>
+                    <div class="ejercicio">
+                        <pre>  
+                            function myFunction(){
+                                alert("Hello World!");
+                            }
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Make the function return "Hello".</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            function myFunction(){
+                                return "Hello";
+                            }
+                            document.getElementById("demo").innerHTML = myFunction();
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Make the function display "Hello" in the inner HTML of an element with the ID "demo".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            function myFunction(){
+                                document.getElementById("demo").innerHTML = myFunction();
+                            }
+                        </pre>
+                    </div>
+
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Objects</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Alert "John" by extracting information from the person object.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var person = {
+                                firstName: "John",
+                                lastName: "Doe"
+                            };
+
+                            alert(person.firstName);
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Add the following property and value to the person object: country: Norway.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var person = {
+                                firstName: "John",
+                                lastName: "Doe",
+                                country: "Norway"
+                            };
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Create an object called person with name = John, age = 50.
+                    Then, access the object to alert("John is 50").</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                             var person = {
+                                 name: "John", age: 50
+                             };
+                             alert(person.name + "is" + person.age)
+                         </pre>
+                     </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Events</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>The &lt;button&gt; element should do something when someone clicks on it. Try to fix it!</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;button onclick="alert('Hello')">Click me.&lt;/button>;
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>When the button is clicked, the function "myFunction" should be executed.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;button onclick="myFunction()">Click me.&lt;/button>;
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>The &lt;div> element should turn red when someone moves the mouse over it.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                             &lt;div onmouseover = "this. style.backgroundColor='red'">myDIV.&lt;/div>
+                         </pre>
+                     </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Strings</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Use the length property to alert the length of txt.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var txt = "Hello World!";
+                            var x = txt.lenght;
+                            alert(x);
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Use escape characters to alert We are "Vikings".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var txt = "We are \"Vikings\";
+                            alert(txt);
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Concatenate the two strings to alert "Hello World!".</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            var str1 = "Hello ";
+                            var str2 = "World!";
+                            alert(str1 + str2);
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Find the position of the character h in the string txt.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var txt = "abcdefghijklm";
+                            var pos = txt.indexOf("h");
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 5</h2>
+                <p class="instrucciones"><i>Use the slice method to return the word "bananas".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var txt = "I can eat bananas all day";
+                            var x = txt.slice(10,17);
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 6</h2>
+                <p class="instrucciones"><i>Use the correct String method to replace the word "Hello" with the word "Welcome".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var txt = "Hello World";
+                            txt = txt.replace("Hello","Welcome");
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 7</h2>
+                <p class="instrucciones"><i>Convert the value of txt to upper case.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           var txt = "Hello World";
+                           txt = txt.toUpperCase();
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 8</h2>
+                <p class="instrucciones"><i>Convert the value of txt to lower case.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var txt = "Hello World";
+                            txt = txt.toLowerCase();
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 9</h2>
+                <p class="instrucciones"><i>Use the concat() method create a string that says "Hello World!".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           var str1 = "Hello";
+                           var str2 = "World!";
+                           var result = str1.concat(str2);
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Arrays</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Get the value "Volvo" from the cars array..</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var cars = ["Saab", "Volvo", "BMW"];
+                            var x = cars[1];
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Change the first item of cars to "Ford".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var cars = ["Volvo", "Jeep", "Mercedes"];
+                            cars[0] = "Ford";
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Alert the number of items in an array, using the correct Array method.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            var cars = ["Volvo", "Jeep", "Mercedes"];
+                            alert(cars.length);
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Use the correct Array method to remove the last item of the fruits array.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var fruits = ["Banana", "Orange", "Apple"];
+                            fruits.pop();
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 5</h2>
+                <p class="instrucciones"><i>Use the correct Array method to add "Kiwi" to the fruits array.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var fruits = ["Banana", "Orange", "Apple"];
+                            fruits.push("Kiwi");
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 6</h2>
+                <p class="instrucciones"><i>Use the splice() method to remove "Orange" and "Apple" from fruits.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+                            fruits.splice(1,2);
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 7</h2>
+                <p class="instrucciones"><i>Use the concat() method to concatenate girls and boys.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var girls = ["Cecilie", "Lone"];
+                            var boys = ["Emil", "Tobias", "Linus"];
+                            var children = girls.concat(boys);
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 8</h2>
+                <p class="instrucciones"><i>Use the correct Array method to sort the fruits array alphabetically.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+                            fruits.sort();
+                        </pre>
+                    </div>
+
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Dates</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Create a Date object and alert the current date and time.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           var d = new Date();
+                           alert(d);
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Use the correct Date method to extract the year (four digits) out of a date object.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var d = new Date();
+                            year = d.getFullYear();
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Use the correct Date method to get the month (0-11) out of a date object.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            var d = new Date();
+                            month = s.getMonth();
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Use the correct Date method to set the year of a date object to 2020</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var d = new Date();
+                            d.setFullYear(2020);
+                        </pre>
+                    </div> 
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Math</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Use the correct Math method to create a random number.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           var r = Math.random();
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Use the correct Math method to return the largest number of 10 and 20.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var x  = Math.max(10,20);
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Use the correct Math method to round a number to the nearest integer.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                             var x = Math.round(5.3);
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Use the correct Math method to get the square root of 9.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var x = Math.sqrt(9);
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Comparisons</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Choose the correct comparison operator to alert true, when x is greater than y.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            x = 10;
+                            y = 5;
+                            alert(x>y);
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Choose the correct comparison operator to alert true, when x is equal to y.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            x = 10;
+                            y = 5;
+                            alert(x==y);
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Choose the correct comparison operator to alert true, when x is NOT equal to y.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            x = 10;
+                            y = 5;
+                            alert(x!=y);
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Choose the correct conditional (ternary) operator to alert "Too young" if age is less than 18, otherwise alert "Old enough".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var age = n;
+                            var voteable = (age&lt;18) ? "Too young" : "Old enough";"
+                            alert(voteable);
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Conditions</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Fix the if statement to alert "Hello World" if x is greater than y.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           if (x>y){
+                               alert("Hello World");
+                           }
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Fix the if statement to alert "Hello World" if x is greater than y, otherwise alert "Goodbye".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            if(x>y){
+                                alert("Hello World");
+                            }else{
+                                alert("Goodbye");
+                            }
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Switch</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Create a switch statement that will alert "Hello" if fruits is "banana", and "Welcome" if fruits is "apple".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           switch(fruits){
+                               case "Banana":
+                                alert("Hello");
+                                break;
+                               case "Apple":
+                                alert("Welcome");
+                                break; 
+                           }
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Add a section that will alert("Neither") if fruits is neither "banana" nor "apple".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            switch(fruits) {
+                                case "Banana":
+                                  alert("Hello")
+                                  break;
+                                case "Apple":
+                                  alert("Welcome")
+                                  break;
+                                default:
+                                  alert("Neither");
+                            }    
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">Loops</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Create a loop that runs from 0 to 9.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                           var i;
+                           for(i = 0; i &lt; 10 ; i++){
+                               console.log(i);
+                           }
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Create a loop that runs through each item in the fruits array.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var fruits = ["Apple", "Banana", "Orange"];
+                            for(x in fruits){
+                                console.log(i);
+                            }
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Create a loop that runs as long as i is less than 10.</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            var i = 0;
+                            while(i&lt;10){
+                                console.log(i);
+                                i++;
+                            }
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Create a loop that runs as long as i is less than 10, but increase i with 2 each time.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            var i = 0;
+                            while(i&lt;10){
+                                console.log(i);
+                                i=i+2;
+                            }
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 5</h2>
+                <p class="instrucciones"><i>Make the loop stop when i is 5.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            for (i = 0; i &lt; 10; i++){
+                                console.log(i);
+                                if(i==5){
+                                    break;
+                                }
+                            }
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 6</h2>
+                <p class="instrucciones"><i>Make the loop jump to the next iteration when i is 5.</i></p>
+                <p>firstName = "John"</p>
+                <p>lastName = "Doe"</p>
+                <p>age = 35</p>
+                    <div class="ejercicio">
+                        <pre>
+                                for (i = 0; i &lt; 10; i++){
+                                    console.log(i);
+                                    if(i==5){
+                                        continue;
+                                    }
+                                }
+                        </pre>
+                    </div>
+            </div>
+<!--**********************************************************************************************-->
+            <!--TEMA-->
+            <h1 class="tema">HTML DOM</h1>
+            <div class="formatodiv">
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 1</h2>
+                <p class="instrucciones"><i>Use the getElementById method to find the &lt;p> element, and change its text to "Hello".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;p id="demo">&lt;p>
+                            &lt;script>
+                                document.getElementbyId("demo").innerHTML = "Hello";
+                            &lt;/script>
+                        </pre>
+                    </div>
+
+                    <!--Ejercicio-->
+                <h2 class="tema">Exercise 2</h2>
+                <p class="instrucciones"><i>Use the getElementsByTagName method to find the first &lt;p> element, and change its text to "Hello".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;p id="demo">&lt;p>
+                            &lt;script>
+                                document.getElementsbyTagName("p")[0].innerHTML = "Hello";
+                            &lt;/script>
+                        </pre>
+                    </div>
+
+                 <!--Ejercicio-->
+                 <h2 class="tema">Exercise 3</h2>
+                 <p class="instrucciones"><i>Change the text of the first element that has the class name "test".</i></p>
+                     <div class="ejercicio">
+                         <pre>
+                            &lt;p class="test">&lt;p>
+                            &lt;p class="test">&lt;p>
+                            &lt;script>
+                                document.getElementsbyClassName("test")[0].innerHTML = "Hello";
+                            &lt;/script>
+                         </pre>
+                     </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 4</h2>
+                <p class="instrucciones"><i>Use HTML DOM to change the value of the image's src attribute.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;img id="image src="smiley/gif">&lt;p>
+                            &lt;script>
+                                document.getElementById("image").src = "pic_mountain.jpg";
+                            &lt;/script>
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 5</h2>
+                <p class="instrucciones"><i>Use HTML DOM to change the value of the input field.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                                &lt;input type="text" id="myText" value="Hello">&lt;p>
+                                &lt;script>
+                                    document.getElementById("myText").value = "Hello";
+                                &lt;/script>
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 6</h2>
+                <p class="instrucciones"><i>Change the (text) color of the p element to "red".</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;p id="demo">&lt;p>
+                            &lt;script>
+                                document.getElementById("demo").style.color = "red";
+                            &lt;/script>
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 7</h2>
+                <p class="instrucciones"><i>Change the font size of the p element to 40 pixels.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;p id="demo">&lt;p>
+                            &lt;script>
+                                document.getElementById("demo").style.fontSize = "40px";
+                            &lt;/script>
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 8</h2>
+                <p class="instrucciones"><i>Use the CSS display property to hide the p element.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;p id="demo">&lt;p>
+                            &lt;script>
+                                document.getElementById("demo").style.display = "none";
+                            &lt;/script>
+                        </pre>
+                    </div>
+
+                <!--Ejercicio-->
+                <h2 class="tema">Exercise 9</h2>
+                <p class="instrucciones"><i>Use the eventListener to assign an onclick event to the button element.</i></p>
+                    <div class="ejercicio">
+                        <pre>
+                            &lt;button id="demo">Click me1&lt;button>
+                            &lt;script>
+                                document.getElementById("demo").addEventListener("click",myFunction);
+                            &lt;/script>
+                        </pre>
+                    </div>
+            </div>
+    </body>
+
+</html>
