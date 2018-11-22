@@ -17,7 +17,6 @@ header {
         float: left;
         width: 100%;
         background: rgb(131, 129, 129);;
-        /*border-bottom:4px solid #666;*/
         /*overflow: hidden;*/
         /*position: relative;*/
     }
@@ -35,16 +34,15 @@ header {
         /*display: block;*/
         float: left;
         list-style: none;
-        /*margin: 0;
-        padding: 0;*/
+        margin: 0;
+        padding: 0;
         position: relative;
         right: 50%;
     }
 
     .topbar ul li a{
         display: block;
-        
-        padding: 15px 15px;
+        padding: 10px 10px;
         background: rgb(131, 129, 129);;
         color: #000; /*TXT*/
         text-decoration: none; /*Los links sin formato*/
@@ -56,17 +54,10 @@ header {
         color: white;
     }
 
-    /*.topbar ul li a.active, 
-    .topbar ul li a .active:hover{
-        color:#fff;
-        background: rgb(60, 0, 0);
-        font-weight: bold;
-    }*/
-
     .current{
-        color:white;
-        background: rgb(60, 0, 0);
-        font-weight: bold;
+        color:white !important;
+        font-weight:bold;
+        background-color: rgb(60, 0, 0) !important;
     }
 
     /*SIDEBAR*/
@@ -83,29 +74,29 @@ header {
             margin-top:145px;
     }
 
-    /*Formato MENU*/
-    .sidebar li{
-        text-align: center; 
-    }
+/*Formato MENU*/
+.sidebar li{
+    text-align: center; 
+}
 
-    .sidebar li a{
-        display: block;
-        color:#000;
-        padding: 8px;
-        text-decoration:none;
-    }
+.sidebar li a{
+    display: block;
+    color:#000;
+    padding: 8px;
+    text-decoration:none;
+}
 
 
-    .sidebar li a:hover{
-        background-color:rgb(200, 0, 0);
-        color:white;
-    }
+.sidebar li a:hover{
+    background-color:rgb(200, 0, 0);
+    color:white;
+}
 
-    .sidebar ul li a.active, .sidebar ul li a.active:hover{
-        color:white; /*TEXTO*/
-        background:rgb(60, 0, 0);  /*Current*/
-        font-weight: bold;
-    }
+.sidebar ul li a.active, .sidebar ul li a.active:hover{
+    color:white; /*TEXTO*/
+    background:rgb(60, 0, 0);  /*Current*/
+    font-weight: bold;
+}
     
 
 
@@ -113,7 +104,6 @@ header {
     width: 5%;
     height: 5%;
 }
-
 footer{
     background-color: #666;
     padding: 30px;
@@ -122,7 +112,7 @@ footer{
     color: white;
 }
 
-/*FRAME Info Dcha*/
+/*FRAME Info*/
 iframe {
     float: right;
     padding: 20px;

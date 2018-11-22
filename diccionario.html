@@ -22,10 +22,9 @@
         <section class="sidebar">
             <nav>
                 <ul>
-                    <li><a  href="#" target="infoframe">Clockspeed</a></li>
-                    <li><a  href="#" target="infoframe">Overclock</a></li>
-                    <li><a  href="#" target="infoframe">Cuello de botella</a></li>
-                    <li><a  href="#" target="infoframe">Sistema operativo</a></li>
+                    <li><a  href="clockspeed.html" class="active" target="infoframe">Clockspeed</a></li>
+                    <li><a  href="overclock.html" target="infoframe">Overclock</a></li>
+                    <li><a  href="bottleneck.html" target="infoframe">Cuello de botella</a></li>
                 </ul>
             </nav>
             <iframe src="infocpu.html" name="infoframe"> </iframe>
@@ -38,13 +37,14 @@
         <!--Marcar Opcion Elegida-->
         <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="application/javascript">
-            $(document).ready(function(){
+            $(document).ready(function(){   /*Cuando carga el documento*/
                 $('ul li a').click(function(){
                     $('li a').removeClass("active");
                     $(this).addClass("active");
                 });
+                window.open("clockspeed.html", 'infoframe');
             });
         </script>
-
+        
     </body>
 </html>

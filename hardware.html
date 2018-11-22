@@ -14,7 +14,7 @@
         </header>
         <div class="topbar">
             <ul>
-                <li><a class="current"href="#">Hardware</a></li>
+                <li><a class="current" href="#">Hardware</a></li>
                 <li><a href="diccionario.html">Diccionario</a></li>
             </ul>
         </div>
@@ -22,7 +22,7 @@
         <section class="sidebar">
             <nav>
                 <ul>
-                    <li><a  href="infocpu.html" target="infoframe">Procesador</a></li>
+                    <li><a  href="infocpu.html" class="active" target="infoframe">Procesador</a></li>
                     <li><a  href="infogpu.html" target="infoframe">Tarjeta Gráfica</a></li>
                     <li><a  href="infopsu.html" target="infoframe">Fuente de Poder</a></li>
                     <li><a  href="inforam.html" target="infoframe">Memoria Ram</a></li>
@@ -46,6 +46,8 @@
                     $('li a').removeClass("active");
                     $(this).addClass("active");
                 });
+        //Elegir por default al inicio        
+                window.open("infocpu.html",'infoframe');
             });
         </script>
 

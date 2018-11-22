@@ -1,5 +1,4 @@
 
-
 header {
     background-color:lightgray;
     padding: 10px;
@@ -7,6 +6,7 @@ header {
     font-size: 25px;
     color: darkblue;
 }
+
 /*Sub-titulos*/
 h2{
     text-align: center;
@@ -25,10 +25,7 @@ ul{
     background-color:whitesmoke;
 }
 
-/*li{
-    float:left;
-}*/
-
+/*Links*/
 li a{
     display:block;
     color:black;
@@ -42,11 +39,12 @@ li a:hover{
     color:white;
 }
 
+/*Color Cuerpo*/
 body{
     background-color: lightgrey;
 }
 
-/*Marcas*/
+/*Imagenes de Marcas*/
 .marcas{
     text-align: center;
 }
@@ -56,13 +54,24 @@ body{
     transition: 0.4s; /*Velocidad Animacion*/
     margin: 9px;
 }
-/*ZOOM LOGOS*/
+/*ZOOM*/
 .logos:hover{
     transform: scale(1.4);
 }
 
 
+/*Imágenes Texto*/
 #img_cpu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     width: 25%;
     height: 25%;
+}
+
+/*Lista Texto*/
+.lista2{
+    display: block;
+    list-style-type: circle;
 }
